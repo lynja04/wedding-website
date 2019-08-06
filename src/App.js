@@ -2,23 +2,25 @@ import React from "react";
 import "./App.css";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomeContainer from "./containers/HomeContainer";
+import OurWeddingContainer from "./containers/OurWeddingContainer";
+import Navigation from "./navigation/Navigation";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
+      <Navigation />
+      <Router>
         <div id={"body"}>
-          <Router>
-            <Switch>
-              <Route exact path="/" component={HomeContainer} />
-            </Switch>
-          </Router>
+          <Switch>
+            <Route exact path="/home" component={HomeContainer} />
+            <Route exact path="/our-wedding" component={OurWeddingContainer} />
+          </Switch>
         </div>
-      </header>
+      </Router>
     </div>
   );
-}
+};
 
 export default App;
