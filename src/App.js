@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import HomeContainer from "./containers/HomeContainer";
 import OurWeddingContainer from "./containers/OurWeddingContainer";
-import Navigation from "./navigation/Navigation";
+import Navigation from "./components/navigation/Navigation";
 
 const App = () => {
   return (
