@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/AJ06272019-CE0011-NZ6_3015.jpg";
 import styled from "styled-components";
 import "../index.css";
+import "typeface-sacramento";
 
 const StyledDiv = styled.div`
   &&& {
-    @import url("https://fonts.googleapis.com/css?family=Sacramento");
     font-family: "Sacramento", cursive;
     color: pink;
     font-size: 75px;

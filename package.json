@@ -13,6 +13,7 @@
     "react-scripts": "3.0.1",
     "styled-components": "^4.3.2",
     "typeface-roboto": "0.0.75",
+    "typeface-sacramento": "^0.0.72",
     "yarn": "^1.17.3"
   },
   "scripts": {

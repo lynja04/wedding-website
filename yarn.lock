@@ -9746,6 +9746,11 @@ typeface-roboto@0.0.75:
   resolved "https://registry.yarnpkg.com/typeface-roboto/-/typeface-roboto-0.0.75.tgz#98d5ba35ec234bbc7172374c8297277099cc712b"
   integrity sha512-VrR/IiH00Z1tFP4vDGfwZ1esNqTiDMchBEXYY9kilT6wRGgFoCAlgkEUMHb1E3mB0FsfZhv756IF0+R+SFPfdg==
 
+typeface-sacramento@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-sacramento/-/typeface-sacramento-0.0.72.tgz#28b7a6cb8edfd4901544984f9e377a594763f0ff"
+  integrity sha512-Q8mBHa5auQijI4x/l0eFous6VSQpVvv9I1Kgg+NxCnL0IDt89mMxp6sr+d9Xe37uIT0XW4JPbV/mwr6hm2T+Ig==
+
 ua-parser-js@^0.7.18:
   version "0.7.20"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"
