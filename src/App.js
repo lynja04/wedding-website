@@ -14,8 +14,12 @@ const App = () => {
       <Router>
         <div id={"body"}>
           <Switch>
-            <Route exact path="/home" component={HomeContainer} />
-            <Route exact path="/our-wedding" component={OurWeddingContainer} />
+            <Route exact path={"/"} component={HomeContainer} />
+            <Route
+              exact
+              path={"/our-wedding"}
+              component={OurWeddingContainer}
+            />
           </Switch>
         </div>
       </Router>
