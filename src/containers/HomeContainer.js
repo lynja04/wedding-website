@@ -6,18 +6,46 @@ import "typeface-sacramento";
 
 const StyledDiv = styled.div`
   &&& {
+    @media (min-width: 768px) {
+      font-size: 75px;
+      padding-top: 40px;
+    }
+    @media (max-width: 767px) {
+      font-size: 2.5rem;
+      padding-top: 5px;
+    }
     font-family: "Sacramento", cursive;
     color: pink;
-    font-size: 75px;
-    padding-top: 40px;
+  }
+`;
+
+const StyledDiv2 = styled.div`
+  &&& {
+    @media (min-width: 768px) {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    @media (max-width: 767px) {
+      font-size: 1.5rem;
+    }
+    font-family: "Sacramento", cursive;
+    color: pink;
+    padding-top: 0;
   }
 `;
 
 const StyledImage = styled.div`
   &&& {
+    @media (min-width: 768px) {
+      height: 90vh;
+      width: 100%;
+    }
+    @media (max-width: 767px) {
+      height: 60vh;
+      width: 100%;
+    }
     background: url(${logo}) no-repeat center center;
     background-size: cover;
-    height: 90vh;
     z-index: -1;
   }
 `;
@@ -43,11 +71,7 @@ const HomeContainer = () => {
         {" "}
         <React.Fragment>
           <StyledDiv>Alissa & James</StyledDiv>
-          <StyledDiv
-            style={{ fontWeight: "bold", fontSize: "30px", paddingTop: "0" }}
-          >
-            6 27 2020 &nbsp; Woodbury, NY
-          </StyledDiv>
+          <StyledDiv2>6 27 2020 &nbsp; Woodbury, NY</StyledDiv2>
         </React.Fragment>
       </StyledImage>
       <StyledDiv
