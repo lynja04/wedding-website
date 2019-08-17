@@ -14,6 +14,7 @@ const LandingImage = styled.div`
     background: url(https://d3t14gfu9ehll4.cloudfront.net/themes/9d5c43bc-4fb7-45e6-8a9e-0f19ecf8f022/undefined_guCXJqL.png)
       repeat center center;
     background-size: cover;
+    z-index: 2;
   }
 `;
 
@@ -26,8 +27,8 @@ const TextStyle = styled.div.attrs(() => ({}))`
 `;
 
 const ImageStyle = {
-  width: "450px",
-  height: "400px",
+  width: "425px",
+  height: "375px",
   zIndex: "2",
   border: "solid 8px #fff",
   boxShadow: "0 1px 4px rgba(0, 0, 0, 0.25)"
@@ -37,7 +38,7 @@ const OurStoryComponent = () => {
   return (
     <div id={"our-story"}>
       <LandingImage>
-        <div className={"pt-5"}>
+        <div style={{ paddingTop: "100px" }}>
           <TextStyle style={{ fontSize: "100px" }}>When we met...</TextStyle>
         </div>
         <div className={"d-flex p-2 justify-content-center"}>
