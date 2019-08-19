@@ -40,7 +40,7 @@ const LandingImage = styled.div`
       width: 100%;
     }
     @media (max-width: 767px) {
-      height: 60vh;
+      height: 100vh;
       width: 100%;
     }
     background: url(https://d3t14gfu9ehll4.cloudfront.net/themes/9d5c43bc-4fb7-45e6-8a9e-0f19ecf8f022/undefined_guCXJqL.png)
@@ -63,6 +63,17 @@ const LandingImage2 = styled.div`
     background-size: cover;
     z-index: 5;
     height: 600px;
+  }
+`;
+
+const ImageContainer = styled.div`
+  &&& {
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   }
 `;
 
@@ -97,7 +108,9 @@ const HomeContainer = () => {
           <div style={{ paddingTop: "85px" }}>
             <NameHeading>Alissa & James</NameHeading>
             <DateAndVenueTitle>6 27 2020 &nbsp; Woodbury, NY</DateAndVenueTitle>
-            <img style={ImageStyle} src={logo} />
+            <ImageContainer>
+              <img style={ImageStyle} src={logo} />
+            </ImageContainer>
           </div>
         </LandingImage2>
       </LandingImage>
