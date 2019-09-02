@@ -22,45 +22,94 @@ const LandingImage = styled.div`
 
 const TextStyle = styled.div.attrs(() => ({}))`
   &&& {
+    @media (min-width: 768px) {
+      font-size: 100px;
+    }
+    @media (max-width: 767px) {
+      font-size: 2.5rem;
+    }
     text-align: center;
     font-family: "Sacramento", cursive;
-    font-size: 35px;
   }
 `;
 
-const ImageStyle1 = {
-  width: "425px",
-  height: "375px",
-  zIndex: "2",
-  border: "solid 8px #fff",
-  boxShadow: "0 1px 4px rgba(0, 0, 0, 0.25)"
-};
+const TextStyle2 = styled.div.attrs(() => ({}))`
+  &&& {
+    @media (min-width: 768px) {
+      font-size: 35px;
+    }
+    @media (max-width: 767px) {
+      font-size: 1.5rem;
+    }
+    text-align: center;
+    font-family: "Sacramento", cursive;
+  }
+`;
 
-const ImageStyle2 = {
-  width: "425px",
-  height: "500px",
-  zIndex: "2",
-  border: "solid 8px #fff",
-  boxShadow: "0 1px 4px rgba(0, 0, 0, 0.25)"
-};
+const FirstImageStyle = styled.img`
+  &&& {
+    @media (min-width: 768px) {
+      width: 425px;
+      height: 375px;
+    }
 
-const ImageStyle3 = {
-  width: "425px",
-  height: "550px",
-  zIndex: "2",
-  border: "solid 8px #fff",
-  boxShadow: "0 1px 4px rgba(0, 0, 0, 0.25)"
-};
+    @media (max-width: 767px) {
+      width: 375px;
+      height: 400px;
+    }
+
+    z-index: 2;
+    border: solid 8px #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  }
+`;
+
+const SecondImageStyle = styled.img`
+  &&& {
+    @media (min-width: 768px) {
+      padding-left: 5px;
+      width: 425px;
+      height: 450px;
+    }
+
+    @media (max-width: 767px) {
+      width: 375px;
+      height: 400px;
+    }
+
+    z-index: 2;
+    border: solid 8px #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  }
+`;
+
+const ThirdImageStyle = styled.img`
+  &&& {
+    @media (min-width: 768px) {
+      padding-left: 5px;
+      width: 425px;
+      height: 525px;
+    }
+
+    @media (max-width: 767px) {
+      width: 375px;
+      height: 500px;
+    }
+    z-index: 2;
+    border: solid 8px #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  }
+`;
 
 const OurStoryComponent = () => {
   return (
     <div id={"our-story"}>
       <LandingImage>
-        <div style={{ paddingTop: "50px" }}>
-          <TextStyle style={{ fontSize: "100px" }}>How we met...</TextStyle>
+        <div style={{ paddingTop: "20px" }}>
+          <TextStyle>How we met...</TextStyle>
         </div>
         <div className={"d-flex ml-5 mr-5"}>
-          <TextStyle>
+          <TextStyle2>
             Alissa and James first met in Nursery School at St. Johns Lutheran
             Church! They became friends and their moms always chatted when
             dropping off and picking them up. Fast forward 10 years, Alissa and
@@ -74,17 +123,17 @@ const OurStoryComponent = () => {
             their first apartment together they have always supported each
             other. On September 29th, 2018 James proposed to Alissa in their
             apartment.
-          </TextStyle>
+          </TextStyle2>
         </div>
-        <div className={"d-flex p-5 justify-content-center"}>
+        <div className={"d-flex p-5 justify-content-center flex-wrap"}>
           <div>
-            <img style={ImageStyle1} src={ourstory1} alt={""} />
+            <FirstImageStyle src={ourstory1} alt={""} />
           </div>
-          <div className={"pl-5"}>
-            <img style={ImageStyle2} src={ourstory2} alt={""} />
+          <div>
+            <SecondImageStyle src={ourstory2} alt={""} />
           </div>
-          <div className={"pl-5"}>
-            <img style={ImageStyle3} src={ourstory3} alt={""} />
+          <div>
+            <ThirdImageStyle src={ourstory3} alt={""} />
           </div>
         </div>
       </LandingImage>

@@ -9,11 +9,10 @@ const NameHeading = styled.div`
   &&& {
     @media (min-width: 768px) {
       font-size: 65px;
-      padding-top: 40px;
+      padding-top: 60px;
     }
     @media (max-width: 767px) {
       font-size: 2.5rem;
-      padding-top: 5px;
     }
     font-family: "Sacramento", cursive;
   }
@@ -57,6 +56,7 @@ const LandingImage2 = styled.div`
     }
     @media (max-width: 767px) {
       width: 100%;
+      height: 280px;
     }
     background: url(https://d3t14gfu9ehll4.cloudfront.net/themes/7978c9cf-9203-4b82-beed-80cddde83d13/undefined_jDGuvDG.png)
       repeat center center;
@@ -77,14 +77,23 @@ const ImageContainer = styled.div`
   }
 `;
 
-const ImageStyle = {
-  width: "900px",
-  height: "600px",
-  zIndex: "2",
-  border: "solid 8px #fff",
-  boxShadow: "0 1px 4px rgba(0, 0, 0, 0.25)",
-  marginTop: "10px"
-};
+const StyledCoverImage = styled.img`
+  &&& {
+    @media (min-width: 768px) {
+      width: 900px;
+      height: 600px;
+    }
+
+    @media (max-width: 767px) {
+      width: 375px;
+      height: 270px;
+    }
+
+    border: solid 8px #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+  }
+`;
 
 const HomeContainer = () => {
   useEffect(() => {
@@ -107,15 +116,17 @@ const HomeContainer = () => {
         <LandingImage2>
           <div style={{ paddingTop: "85px" }}>
             <NameHeading>Alissa & James</NameHeading>
-            <DateAndVenueTitle>6 27 2020 &nbsp; Woodbury, NY</DateAndVenueTitle>
+            <DateAndVenueTitle>
+              06.27.2020 &nbsp; Woodbury, NY
+            </DateAndVenueTitle>
             <ImageContainer>
-              <img style={ImageStyle} src={logo} />
+              <StyledCoverImage src={logo} />
             </ImageContainer>
+            <OurStoryContainer />
+            <OurWeddingContainer />
           </div>
         </LandingImage2>
       </LandingImage>
-      <OurStoryContainer />
-      <OurWeddingContainer />
     </div>
   );
 };
