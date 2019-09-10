@@ -1,6 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChurch,
+  faGlassCheers,
+  faUtensils,
+  faHourglassEnd,
+  faCoffee
+} from "@fortawesome/free-solid-svg-icons";
+import "../fonts.css";
 
 import {
   VerticalTimeline,
@@ -12,7 +20,7 @@ const LandingImage = styled.div`
   &&& {
     @media (min-width: 768px) {
       width: 100%;
-      height: 150vh;
+      height: 105vh;
     }
     @media (max-width: 767px) {
       width: 100%;
@@ -27,13 +35,13 @@ const LandingImage = styled.div`
 const TextStyle = styled.div.attrs(() => ({}))`
   &&& {
     @media (min-width: 768px) {
-      font-size: 100px;
+      font-size: 80px;
     }
     @media (max-width: 767px) {
       font-size: 2.5rem;
     }
     text-align: center;
-    font-family: "Sacramento", cursive;
+    font-family: "Shadows Into Light Two", cursive;
   }
 `;
 
@@ -45,10 +53,13 @@ const OurWeddingComponent = () => {
           <TextStyle>Our Wedding</TextStyle>
           <VerticalTimeline>
             <VerticalTimelineElement
+              style={{ textAlign: "left" }}
               className="vertical-timeline-element--work"
               date="7:30pm"
               iconStyle={{ background: "pink", color: "#fff" }}
-              icon={<FontAwesomeIcon icon="coffee" />}
+              icon={
+                <FontAwesomeIcon style={{ width: "1.5rem" }} icon={faChurch} />
+              }
             >
               <h3 className="vertical-timeline-element-title">
                 Ceremony at The Fox Hollow
@@ -60,10 +71,16 @@ const OurWeddingComponent = () => {
               {/*</p>*/}
             </VerticalTimelineElement>
             <VerticalTimelineElement
+              style={{ textAlign: "left" }}
               className="vertical-timeline-element--work"
               date="8:30pm"
               iconStyle={{ background: "pink", color: "#fff" }}
-              icon={<FontAwesomeIcon icon="coffee" />}
+              icon={
+                <FontAwesomeIcon
+                  style={{ width: "1.5rem" }}
+                  icon={faGlassCheers}
+                />
+              }
             >
               <h3 className="vertical-timeline-element-title">Cocktail Hour</h3>
               {/*<h4 className="vertical-timeline-element-subtitle">*/}
@@ -75,10 +92,16 @@ const OurWeddingComponent = () => {
               {/*</p>*/}
             </VerticalTimelineElement>
             <VerticalTimelineElement
+              style={{ textAlign: "left" }}
               className="vertical-timeline-element--work"
               date="9:30pm"
               iconStyle={{ background: "pink", color: "#fff" }}
-              icon={<FontAwesomeIcon icon="coffee" />}
+              icon={
+                <FontAwesomeIcon
+                  style={{ width: "1.5rem" }}
+                  icon={faUtensils}
+                />
+              }
             >
               <h3 className="vertical-timeline-element-title">Reception</h3>
               {/*<h4 className="vertical-timeline-element-subtitle">*/}
@@ -87,10 +110,16 @@ const OurWeddingComponent = () => {
               {/*<p>User Experience, Visual Design</p>*/}
             </VerticalTimelineElement>
             <VerticalTimelineElement
+              style={{ textAlign: "left" }}
               className="vertical-timeline-element--work"
               date="1:30am"
               iconStyle={{ background: "pink", color: "#fff" }}
-              icon={<FontAwesomeIcon icon="coffee" />}
+              icon={
+                <FontAwesomeIcon
+                  style={{ width: "1.5rem" }}
+                  icon={faHourglassEnd}
+                />
+              }
             >
               <h3 className="vertical-timeline-element-title">
                 Reception Ends
@@ -101,10 +130,13 @@ const OurWeddingComponent = () => {
               {/*<p>User Experience, Visual Design</p>*/}
             </VerticalTimelineElement>
             <VerticalTimelineElement
+              style={{ textAlign: "left" }}
               className="vertical-timeline-element--education"
               date="7:00am-10:30am"
               iconStyle={{ background: "pink", color: "#fff" }}
-              icon={<FontAwesomeIcon icon="coffee" />}
+              icon={
+                <FontAwesomeIcon style={{ width: "1.5rem" }} icon={faCoffee} />
+              }
             >
               <h3 className="vertical-timeline-element-title">
                 Brunch at The Fox Hollow Hotel

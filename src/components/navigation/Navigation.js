@@ -25,15 +25,20 @@ const Navigation = () => {
       "https://gc.synxis.com/rez.aspx?Hotel=11937&Chain=14549&arrive=6/27/2020&depart=6/28/2020&adult=1&child=0&group=270620MONTA"
     );
   };
+
+  const openRegistry = () => {
+    window.open("http://www.zola.com/registry/jamesandalissa2020");
+  };
+
   return (
     <Navbar sticky="top" bg="light" variant="light">
       <Navbar.Brand href="/">A & J</Navbar.Brand>
       <Nav className={"mr-auto"}>
         <Nav.Link href="#our-story">Our Story</Nav.Link>
         <Nav.Link href="#our-wedding">Our Wedding</Nav.Link>
-        <Nav.Link onClick={openFoxHollow}>Book Hotel Room</Nav.Link>
-        <Nav.Link href="/photos">Photos</Nav.Link>
-        <Nav.Link href="/registry">Registry</Nav.Link>
+        <Nav.Link onClick={openFoxHollow}>Hotel Rooms</Nav.Link>
+        <Nav.Link href="#photos">Photos</Nav.Link>
+        <Nav.Link onClick={openRegistry}>Registry</Nav.Link>
       </Nav>
       <StyledNav>
         <Nav.Link>Created by J. Lynn</Nav.Link>

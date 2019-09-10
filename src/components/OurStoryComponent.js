@@ -4,6 +4,7 @@ import ourstory1 from "../assets/ourstory1.png";
 import ourstory2 from "../assets/ourstory2.png";
 import ourstory3 from "../assets/ourstory3.png";
 import "typeface-sacramento";
+import "../fonts.css";
 
 const LandingImage = styled.div`
   &&& {
@@ -23,13 +24,13 @@ const LandingImage = styled.div`
 const TextStyle = styled.div.attrs(() => ({}))`
   &&& {
     @media (min-width: 768px) {
-      font-size: 100px;
+      font-size: 80px;
     }
     @media (max-width: 767px) {
       font-size: 2.5rem;
     }
     text-align: center;
-    font-family: "Sacramento", cursive;
+    font-family: "Shadows Into Light Two", cursive;
   }
 `;
 
@@ -42,15 +43,15 @@ const TextStyle2 = styled.div.attrs(() => ({}))`
       font-size: 1.5rem;
     }
     text-align: center;
-    font-family: "Sacramento", cursive;
+    font-family: "Shadows Into Light Two", cursive;
   }
 `;
 
 const FirstImageStyle = styled.img`
   &&& {
     @media (min-width: 768px) {
-      width: 425px;
-      height: 375px;
+      width: 450px;
+      height: 500px;
     }
 
     @media (max-width: 767px) {
@@ -68,8 +69,8 @@ const SecondImageStyle = styled.img`
   &&& {
     @media (min-width: 768px) {
       padding-left: 5px;
-      width: 425px;
-      height: 450px;
+      width: 400px;
+      height: 500px;
     }
 
     @media (max-width: 767px) {
@@ -87,13 +88,13 @@ const ThirdImageStyle = styled.img`
   &&& {
     @media (min-width: 768px) {
       padding-left: 5px;
-      width: 425px;
-      height: 525px;
+      width: 400px;
+      height: 500px;
     }
 
     @media (max-width: 767px) {
       width: 375px;
-      height: 500px;
+      height: 475px;
     }
     z-index: 2;
     border: solid 8px #fff;

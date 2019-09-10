@@ -2,32 +2,33 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/AJ06272019-CE0011-NZ6_3015.jpg";
 import styled from "styled-components";
 import "typeface-sacramento";
+import "../fonts.css";
 import OurStoryContainer from "./OurStoryContainer";
 import OurWeddingContainer from "./OurWeddingContainer";
+import PhotosContainer from "./PhotosContainer";
 
 const NameHeading = styled.div`
   &&& {
     @media (min-width: 768px) {
-      font-size: 65px;
+      font-size: 80px;
       padding-top: 60px;
     }
     @media (max-width: 767px) {
       font-size: 2.5rem;
     }
-    font-family: "Sacramento", cursive;
+    font-family: "Shadows Into Light Two", cursive;
   }
 `;
 
 const DateAndVenueTitle = styled.div`
   &&& {
     @media (min-width: 768px) {
-      font-size: 25px;
-      font-weight: bold;
+      font-size: 35px;
     }
     @media (max-width: 767px) {
       font-size: 1.5rem;
     }
-    font-family: "Sacramento", cursive;
+    font-family: "Shadows Into Light Two", cursive;
     padding-top: 0;
   }
 `;
@@ -124,6 +125,7 @@ const HomeContainer = () => {
             </ImageContainer>
             <OurStoryContainer />
             <OurWeddingContainer />
+            <PhotosContainer />
           </div>
         </LandingImage2>
       </LandingImage>
