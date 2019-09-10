@@ -54,8 +54,10 @@ const LandingImage2 = styled.div`
   &&& {
     @media (min-width: 768px) {
       width: 100%;
+      height: 725px;
     }
     @media (max-width: 767px) {
+      margin-top: 75px;
       width: 100%;
       height: 280px;
     }
@@ -63,7 +65,6 @@ const LandingImage2 = styled.div`
       repeat center center;
     background-size: cover;
     z-index: 5;
-    height: 600px;
   }
 `;
 

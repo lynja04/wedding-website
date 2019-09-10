@@ -4,7 +4,7 @@ import styled from "styled-components";
 import image1 from "../assets/IMG_8292.JPG";
 import image2 from "../assets/IMG_8293.JPG";
 import image3 from "../assets/IMG_8294.JPG";
-import image4 from "../assets/IMG_8295.JPG";
+import image4 from "../assets/IMG_9429.JPG";
 import image5 from "../assets/IMG_8298.JPG";
 import image6 from "../assets/IMG_8306.JPG";
 
@@ -46,7 +46,7 @@ const FirstImageStyle = styled.img`
 
     @media (max-width: 767px) {
       width: 375px;
-      height: 400px;
+      height: 250px;
     }
 
     z-index: 2;
@@ -55,12 +55,26 @@ const FirstImageStyle = styled.img`
   }
 `;
 
+const ContainerStyle = styled.div.attrs(() => ({
+  id: "photos"
+}))`
+  &&& {
+    @media (min-width: 768px) {
+      padding-top: 40px;
+    }
+
+    @media (max-width: 767px) {
+      padding-top: 100px;
+    }
+  }
+`;
+
 const PhotosContainer = () => {
   return (
-    <div id={"photos"}>
+    <ContainerStyle>
       <LandingImage>
         <TextStyle>Photos</TextStyle>
-        <div className={"m-5 d-flex flex-wrap"}>
+        <div className={"d-flex pl-2 pr-2 justify-content-center flex-wrap"}>
           <FirstImageStyle src={image1} alt={""} />
           <FirstImageStyle src={image2} alt={""} />
           <FirstImageStyle src={image3} alt={""} />
@@ -69,7 +83,7 @@ const PhotosContainer = () => {
           <FirstImageStyle src={image6} alt={""} />
         </div>
       </LandingImage>
-    </div>
+    </ContainerStyle>
   );
 };
 

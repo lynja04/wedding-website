@@ -31,7 +31,7 @@ const Navigation = () => {
   };
 
   return (
-    <Navbar sticky="top" bg="light" variant="light">
+    <Navbar fixed="top" bg="light" variant="light">
       <Navbar.Brand href="/">A & J</Navbar.Brand>
       <Nav className={"mr-auto"}>
         <Nav.Link href="#our-story">Our Story</Nav.Link>

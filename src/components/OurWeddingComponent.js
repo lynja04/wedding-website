@@ -45,9 +45,23 @@ const TextStyle = styled.div.attrs(() => ({}))`
   }
 `;
 
+const ContainerStyle = styled.div.attrs(() => ({
+  id: "our-wedding"
+}))`
+  &&& {
+    @media (min-width: 768px) {
+      padding-top: 40px;
+    }
+
+    @media (max-width: 767px) {
+      padding-top: 100px;
+    }
+  }
+`;
+
 const OurWeddingComponent = () => {
   return (
-    <div id={"our-wedding"}>
+    <ContainerStyle>
       <div>
         <LandingImage>
           <TextStyle>Our Wedding</TextStyle>
@@ -139,7 +153,7 @@ const OurWeddingComponent = () => {
               }
             >
               <h3 className="vertical-timeline-element-title">
-                Brunch at The Fox Hollow Hotel
+                Morning after Brunch at the Inn at Fox Hollow
               </h3>
               {/*<h4 className="vertical-timeline-element-subtitle">*/}
               {/*  Online Course*/}
@@ -149,7 +163,7 @@ const OurWeddingComponent = () => {
           </VerticalTimeline>
         </LandingImage>
       </div>
-    </div>
+    </ContainerStyle>
   );
 };
 

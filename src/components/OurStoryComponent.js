@@ -102,11 +102,25 @@ const ThirdImageStyle = styled.img`
   }
 `;
 
+const ContainerStyle = styled.div.attrs(() => ({
+  id: "our-story"
+}))`
+  &&& {
+    @media (min-width: 768px) {
+      padding-top: 40px;
+    }
+
+    @media (max-width: 767px) {
+      padding-top: 100px;
+    }
+  }
+`;
+
 const OurStoryComponent = () => {
   return (
-    <div id={"our-story"}>
+    <ContainerStyle>
       <LandingImage>
-        <div style={{ paddingTop: "20px" }}>
+        <div>
           <TextStyle>How we met...</TextStyle>
         </div>
         <div className={"d-flex ml-5 mr-5"}>
@@ -138,7 +152,7 @@ const OurStoryComponent = () => {
           </div>
         </div>
       </LandingImage>
-    </div>
+    </ContainerStyle>
   );
 };
 
