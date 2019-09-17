@@ -50,8 +50,8 @@ const TextStyle2 = styled.div.attrs(() => ({}))`
 const FirstImageStyle = styled.img`
   &&& {
     @media (min-width: 768px) {
-      width: 450px;
-      height: 500px;
+      width: 475px;
+      height: 550px;
     }
 
     @media (max-width: 767px) {
@@ -69,13 +69,13 @@ const SecondImageStyle = styled.img`
   &&& {
     @media (min-width: 768px) {
       padding-left: 5px;
-      width: 400px;
-      height: 500px;
+      width: 450px;
+      height: 550px;
     }
 
     @media (max-width: 767px) {
       width: 375px;
-      height: 400px;
+      height: 485px;
     }
 
     z-index: 2;
@@ -88,13 +88,13 @@ const ThirdImageStyle = styled.img`
   &&& {
     @media (min-width: 768px) {
       padding-left: 5px;
-      width: 400px;
-      height: 500px;
+      width: 500px;
+      height: 550px;
     }
 
     @media (max-width: 767px) {
       width: 375px;
-      height: 475px;
+      height: 425px;
     }
     z-index: 2;
     border: solid 8px #fff;

@@ -6,7 +6,8 @@ import {
   faGlassCheers,
   faUtensils,
   faHourglassEnd,
-  faCoffee
+  faCoffee,
+  faCompass
 } from "@fortawesome/free-solid-svg-icons";
 import "../fonts.css";
 
@@ -20,7 +21,7 @@ const LandingImage = styled.div`
   &&& {
     @media (min-width: 768px) {
       width: 100%;
-      height: 105vh;
+      height: 110vh;
     }
     @media (max-width: 767px) {
       width: 100%;
@@ -59,12 +60,49 @@ const ContainerStyle = styled.div.attrs(() => ({
   }
 `;
 
+const AddressStyle = styled.div`
+  &&& {
+    @media (min-width: 768px) {
+      font-size: 50px;
+    }
+    @media (max-width: 767px) {
+      font-size: 2.2rem;
+    }
+    text-align: center;
+    font-family: "Shadows Into Light Two", cursive;
+  }
+`;
+
+const openMap = () => {
+  window.open(
+    "https://www.google.com/maps/place/The+Fox+Hollow/@40.813782,-73.4873767,17z/data=!3m1!4b1!4m8!3m7!1s0x89c282170e244853:0xd34f7fb061cb167c!5m2!4m1!1i2!8m2!3d40.813782!4d-73.485188"
+  );
+};
+
+const ViewMapComponent = () => {
+  return (
+    <div
+      style={{
+        paddingTop: "15px",
+        fontSize: "20px",
+        fontFamily: "Shadows Into Light Two ,cursive"
+      }}
+      onClick={openMap}
+    >
+      <span className={"pr-1"}>Click to View Map</span>
+      <FontAwesomeIcon icon={faCompass} />
+    </div>
+  );
+};
+
 const OurWeddingComponent = () => {
   return (
     <ContainerStyle>
       <div>
         <LandingImage>
-          <TextStyle>Our Wedding</TextStyle>
+          <TextStyle>Our Wedding at The Fox Hollow</TextStyle>
+          <AddressStyle>7725 Jericho Turnpike, Woodbury, NY 11797</AddressStyle>
+          <ViewMapComponent />
           <VerticalTimeline>
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
@@ -78,11 +116,6 @@ const OurWeddingComponent = () => {
               <h3 className="vertical-timeline-element-title">
                 Ceremony at The Fox Hollow
               </h3>
-              {/*<h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>*/}
-              {/*<p>*/}
-              {/*  Creative Direction, User Experience, Visual Design, Project*/}
-              {/*  Management, Team Leading*/}
-              {/*</p>*/}
             </VerticalTimelineElement>
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
@@ -97,13 +130,6 @@ const OurWeddingComponent = () => {
               }
             >
               <h3 className="vertical-timeline-element-title">Cocktail Hour</h3>
-              {/*<h4 className="vertical-timeline-element-subtitle">*/}
-              {/*  Cocktail Hour*/}
-              {/*</h4>*/}
-              {/*<p>*/}
-              {/*  Creative Direction, User Experience, Visual Design, SEO, Online*/}
-              {/*  Marketing*/}
-              {/*</p>*/}
             </VerticalTimelineElement>
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
@@ -117,11 +143,9 @@ const OurWeddingComponent = () => {
                 />
               }
             >
-              <h3 className="vertical-timeline-element-title">Reception</h3>
-              {/*<h4 className="vertical-timeline-element-subtitle">*/}
-              {/*  Los Angeles, CA*/}
-              {/*</h4>*/}
-              {/*<p>User Experience, Visual Design</p>*/}
+              <h3 className="vertical-timeline-element-title">
+                Reception in the Winter Garden
+              </h3>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
@@ -138,10 +162,6 @@ const OurWeddingComponent = () => {
               <h3 className="vertical-timeline-element-title">
                 Reception Ends
               </h3>
-              {/*<h4 className="vertical-timeline-element-subtitle">*/}
-              {/*  San Francisco, CA*/}
-              {/*</h4>*/}
-              {/*<p>User Experience, Visual Design</p>*/}
             </VerticalTimelineElement>
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
@@ -155,10 +175,6 @@ const OurWeddingComponent = () => {
               <h3 className="vertical-timeline-element-title">
                 Morning after Brunch at the Inn at Fox Hollow
               </h3>
-              {/*<h4 className="vertical-timeline-element-subtitle">*/}
-              {/*  Online Course*/}
-              {/*</h4>*/}
-              {/*<p>Strategy, Social Media</p>*/}
             </VerticalTimelineElement>
           </VerticalTimeline>
         </LandingImage>
