@@ -105,15 +105,6 @@ const ThirdImageStyle = styled.img`
 const ContainerStyle = styled.div.attrs(() => ({
   id: "our-story"
 }))`
-  &&& {
-    @media (min-width: 768px) {
-      padding-top: 40px;
-    }
-
-    @media (max-width: 767px) {
-      padding-top: 100px;
-    }
-  }
 `;
 
 const OurStoryComponent = () => {

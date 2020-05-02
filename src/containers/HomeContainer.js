@@ -109,6 +109,25 @@ const PostponedText = styled.div.attrs(() => ({
 font-family: "Shadows Into Light Two", cursive;
 padding-top: 0;`;
 
+const ContainerSpace = styled.div.attrs(() => ({
+
+}))
+  `
+  &&& {
+      &&& {
+    @media (min-width: 768px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 767px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+  }
+`;
+
 const HomeContainer = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -135,13 +154,22 @@ const HomeContainer = () => {
             <ImageContainer>
               <PostponedText>* Due to the COVID-19 pandemic *</PostponedText>
               <PostponedText>* We have decided to postpone our wedding to Sunday, June 6th 2021 *</PostponedText>
-              <PostponedText>* See below for date & time changes *</PostponedText>
+              <PostponedText>* See below for date/time changes *</PostponedText>
               <StyledCoverImage src={logo} />
             </ImageContainer>
-            <OurWeddingContainer />
-            <HotelInfoContainer />
-            <OurStoryContainer />
-            <PhotosContainer />
+            <ContainerSpace>
+              <OurWeddingContainer />
+            </ContainerSpace>
+            <ContainerSpace>
+              <HotelInfoContainer />
+            </ContainerSpace>
+            <ContainerSpace>
+              <OurStoryContainer />
+            </ContainerSpace>
+            <ContainerSpace>
+              <PhotosContainer />
+            </ContainerSpace>
+
           </div>
         </LandingImage2>
       </LandingImage>

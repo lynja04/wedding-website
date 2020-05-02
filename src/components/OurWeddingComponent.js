@@ -49,15 +49,7 @@ const TextStyle = styled.div.attrs(() => ({}))`
 const ContainerStyle = styled.div.attrs(() => ({
   id: "our-wedding"
 }))`
-  &&& {
-    @media (min-width: 768px) {
-      padding-top: 100px;
-    }
 
-    @media (max-width: 767px) {
-      padding-top: 100px;
-    }
-  }
 `;
 
 const AddressStyle = styled.div`

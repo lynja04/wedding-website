@@ -5,15 +5,6 @@ import hotelpic from "../assets/hotelpic.jpeg";
 const ContainerStyle = styled.div.attrs(() => ({
   id: "hotel-info"
 }))`
-  &&& {
-    @media (min-width: 768px) {
-      padding-top: 25px;
-    }
-
-    @media (max-width: 767px) {
-      padding-top: 40px;
-    }
-  }
 `;
 
 const LandingImage = styled.div`
@@ -39,7 +30,7 @@ const TextStyle = styled.div.attrs(() => ({}))`
       font-size: 80px;
     }
     @media (max-width: 767px) {
-      font-size: 2.5rem;
+      font-size: 2.0rem;
     }
     text-align: center;
     font-family: "Shadows Into Light Two", cursive;
@@ -52,7 +43,7 @@ const TextStyle2 = styled.div`
       font-size: 35px;
     }
     @media (max-width: 767px) {
-      font-size: 2.2rem;
+      font-size: 1.8rem;
     }
     text-align: center;
     font-family: "Shadows Into Light Two", cursive;
@@ -109,7 +100,7 @@ const HotelInfoComponent = () => {
           <FirstImageStyle src={hotelpic} alt={""} />
         </div>
         <div style={{ paddingTop: "20px" }}>
-        <TextStyle2 style={{ color: "red" }}>
+          <TextStyle2 style={{ color: "red" }}>
             *All previous hotel bookings have be canceled. You must rebook
           </TextStyle2>
           <TextStyle2>
@@ -123,7 +114,7 @@ const HotelInfoComponent = () => {
             You can book online by clicking on this text
           </TextStyle3> */}
           <TextStyle2>
-            or call 516-224-8100 with reference to group name: Montalbano/Lynn
+            Please call 516-224-8100 with reference to group name: Montalbano/Lynn
             Wedding
           </TextStyle2>
         </div>
