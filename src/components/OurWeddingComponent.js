@@ -51,7 +51,7 @@ const ContainerStyle = styled.div.attrs(() => ({
 }))`
   &&& {
     @media (min-width: 768px) {
-      padding-top: 40px;
+      padding-top: 100px;
     }
 
     @media (max-width: 767px) {
@@ -107,7 +107,7 @@ const OurWeddingComponent = () => {
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
               className="vertical-timeline-element--work"
-              date="7:30pm"
+              date="5:00pm"
               iconStyle={{ background: "pink", color: "#fff" }}
               icon={
                 <FontAwesomeIcon style={{ width: "1.5rem" }} icon={faChurch} />
@@ -120,7 +120,7 @@ const OurWeddingComponent = () => {
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
               className="vertical-timeline-element--work"
-              date="8:30pm"
+              date="6:00pm"
               iconStyle={{ background: "pink", color: "#fff" }}
               icon={
                 <FontAwesomeIcon
@@ -134,7 +134,7 @@ const OurWeddingComponent = () => {
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
               className="vertical-timeline-element--work"
-              date="9:30pm"
+              date="7:00pm"
               iconStyle={{ background: "pink", color: "#fff" }}
               icon={
                 <FontAwesomeIcon
@@ -150,7 +150,7 @@ const OurWeddingComponent = () => {
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
               className="vertical-timeline-element--work"
-              date="1:30am"
+              date="11:00am"
               iconStyle={{ background: "pink", color: "#fff" }}
               icon={
                 <FontAwesomeIcon
@@ -166,7 +166,7 @@ const OurWeddingComponent = () => {
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
               className="vertical-timeline-element--education"
-              date="7:00am-10:30am"
+              date="6:00am-9:30am"
               iconStyle={{ background: "pink", color: "#fff" }}
               icon={
                 <FontAwesomeIcon style={{ width: "1.5rem" }} icon={faCoffee} />

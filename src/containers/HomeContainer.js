@@ -98,6 +98,17 @@ const StyledCoverImage = styled.img`
   }
 `;
 
+const PostponedText = styled.div.attrs(() => ({
+  className: "mt-2 mb-2"
+}))` color: red;     @media (min-width: 768px) {
+  font-size: 35px;
+}
+@media (max-width: 767px) {
+  font-size: 1.5rem;
+}
+font-family: "Shadows Into Light Two", cursive;
+padding-top: 0;`;
+
 const HomeContainer = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -110,7 +121,6 @@ const HomeContainer = () => {
       document.documentElement.offsetHeight
     )
       return;
-    console.log("Fetch more list items!");
   }
 
   return (
@@ -123,11 +133,14 @@ const HomeContainer = () => {
               06.06.2021 &nbsp; Woodbury, NY
             </DateAndVenueTitle>
             <ImageContainer>
+              <PostponedText>* Due to the COVID-19 pandemic *</PostponedText>
+              <PostponedText>* We have decided to postpone our wedding to Sunday, June 6th 2021 *</PostponedText>
+              <PostponedText>* See below for date & time changes *</PostponedText>
               <StyledCoverImage src={logo} />
             </ImageContainer>
-            <OurStoryContainer />
             <OurWeddingContainer />
             <HotelInfoContainer />
+            <OurStoryContainer />
             <PhotosContainer />
           </div>
         </LandingImage2>

@@ -7,7 +7,7 @@ const ContainerStyle = styled.div.attrs(() => ({
 }))`
   &&& {
     @media (min-width: 768px) {
-      padding-top: 100px;
+      padding-top: 0px;
     }
 
     @media (max-width: 767px) {
@@ -109,16 +109,19 @@ const HotelInfoComponent = () => {
           <FirstImageStyle src={hotelpic} alt={""} />
         </div>
         <div style={{ paddingTop: "20px" }}>
+        <TextStyle2 style={{ color: "red" }}>
+            *All previous hotel bookings have be canceled. You must rebook
+          </TextStyle2>
           <TextStyle2>
             A hotel block has been secured at the Inn at Fox Hollow for
-            $279/night
+            $229/night
           </TextStyle2>
           <TextStyle2 style={{ color: "red" }}>
-            *Must be booked by May 27th 2020
+            *Must be booked by May 6th 2021
           </TextStyle2>
-          <TextStyle3 style={{ color: "blue" }} onClick={openFoxHollow}>
+          {/* <TextStyle3 style={{ color: "blue" }} onClick={openFoxHollow}>
             You can book online by clicking on this text
-          </TextStyle3>
+          </TextStyle3> */}
           <TextStyle2>
             or call 516-224-8100 with reference to group name: Montalbano/Lynn
             Wedding
