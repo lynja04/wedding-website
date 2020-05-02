@@ -38,7 +38,7 @@ const Navigation = () => {
         <Nav.Link href="#our-wedding">Our Wedding</Nav.Link>
         <Nav.Link onClick={openFoxHollow}>Hotel Rooms</Nav.Link>
         <Nav.Link href="#photos">Photos</Nav.Link>
-        <Nav.Link onClick={openRegistry}>Registry</Nav.Link>
+        <Nav.Link onClick={openRegistry}>Bridal Registry</Nav.Link>
       </Nav>
       <StyledNav>
         <Nav.Link>Created by J. Lynn</Nav.Link>

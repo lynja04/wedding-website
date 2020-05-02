@@ -6,6 +6,7 @@ import "../fonts.css";
 import OurStoryContainer from "./OurStoryContainer";
 import OurWeddingContainer from "./OurWeddingContainer";
 import PhotosContainer from "./PhotosContainer";
+import HotelInfoContainer from "./HotelInfoContainer";
 
 const NameHeading = styled.div`
   &&& {
@@ -126,6 +127,7 @@ const HomeContainer = () => {
             </ImageContainer>
             <OurStoryContainer />
             <OurWeddingContainer />
+            <HotelInfoContainer />
             <PhotosContainer />
           </div>
         </LandingImage2>

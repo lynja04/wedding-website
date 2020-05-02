@@ -126,18 +126,17 @@ const OurStoryComponent = () => {
         <div className={"d-flex ml-5 mr-5"}>
           <TextStyle2>
             Alissa and James first met in Nursery School at St. Johns Lutheran
-            Church! They became friends and their moms always chatted when
-            dropping off and picking them up. Fast forward 10 years, Alissa and
-            James were both in Lindenhurst High School. They began talking and
-            realized they were in the same first period English Class, along
-            with the Best Man! James began sitting with Alissa at the lunch
-            table, and they continued talking on Facebook Messenger at night.
-            One month later on October 22nd, 2010 James asked Alissa to go out.
-            Their love for each other grew as they spent more time together.
-            From graduating high school, to graduating college and moving into
-            their first apartment together they have always supported each
-            other. On September 29th, 2018 James proposed to Alissa in their
-            apartment.
+            Church! They became friends and their moms always chatted during
+            pick up and drop off. Fast forward 10 years, Alissa and James were
+            both in Lindenhurst High School. They began talking and realized
+            they were in the same first period English Class! James began
+            sitting with Alissa at the lunch table, and walked with her to her
+            classes. One month later on October 22nd, 2010 James asked Alissa to
+            be his girlfriend. Their love for each other grew with time as they
+            spent more time together. From graduating high school, to graduating
+            college and moving into their first apartment they have always stood
+            by each other's side. On September 29th, 2018 James proposed to
+            Alissa in their apartment, and the rest is history!
           </TextStyle2>
         </div>
         <div className={"d-flex p-5 justify-content-center flex-wrap"}>
