@@ -120,7 +120,7 @@ const HomeContainer = () => {
           <div style={{ paddingTop: "85px" }}>
             <NameHeading>Alissa & James</NameHeading>
             <DateAndVenueTitle>
-              06.27.2020 &nbsp; Woodbury, NY
+              06.06.2021 &nbsp; Woodbury, NY
             </DateAndVenueTitle>
             <ImageContainer>
               <StyledCoverImage src={logo} />
