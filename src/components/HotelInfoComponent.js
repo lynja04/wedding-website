@@ -7,7 +7,7 @@ const ContainerStyle = styled.div.attrs(() => ({
 }))`
   &&& {
     @media (min-width: 768px) {
-      padding-top: 0px;
+      padding-top: 25px;
     }
 
     @media (max-width: 767px) {
