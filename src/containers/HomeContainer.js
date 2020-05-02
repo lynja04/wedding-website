@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/AJ06272019-CE0011-NZ6_3015.jpg";
+import logo from "../assets/new-landing-image.jpg";
 import styled from "styled-components";
 import "typeface-sacramento";
 import "../fonts.css";
