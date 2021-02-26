@@ -87,7 +87,7 @@ const FirstImageStyle = styled.img`
 
 const openFoxHollow = () => {
   window.open(
-    "https://gc.synxis.com/rez.aspx?Hotel=11937&Chain=14549&arrive=6/27/2020&depart=6/28/2020&adult=1&child=0&group=270620MONTA"
+    "https://be.synxis.com/?adult=1&arrive=2021-06-06&chain=14549&child=0&currency=USD&depart=2021-06-07&group=300420MONTA&hotel=11937&level=hotel&locale=en-US&rooms=1"
   );
 };
 
