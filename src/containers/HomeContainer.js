@@ -154,7 +154,7 @@ const HomeContainer = () => {
             <ImageContainer>
               <PostponedText>* Due to the COVID-19 pandemic *</PostponedText>
               <PostponedText>* We have decided to postpone our wedding to Sunday, June 6th 2021 *</PostponedText>
-              <PostponedText>* See below for date/time changes *</PostponedText>
+              <PostponedText>* See below for time changes, new invitation to follow *</PostponedText>
               <StyledCoverImage src={logo} />
             </ImageContainer>
             <ContainerSpace>

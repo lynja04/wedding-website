@@ -142,7 +142,7 @@ const OurWeddingComponent = () => {
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
               className="vertical-timeline-element--work"
-              date="11:00am"
+              date="11:00pm"
               iconStyle={{ background: "pink", color: "#fff" }}
               icon={
                 <FontAwesomeIcon

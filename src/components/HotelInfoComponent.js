@@ -101,11 +101,15 @@ const HotelInfoComponent = () => {
         </div>
         <div style={{ paddingTop: "20px" }}>
           <TextStyle2 style={{ color: "red" }}>
-            *All previous hotel bookings have be canceled. You must rebook
+            *All previous hotel bookings have been cancelled*
           </TextStyle2>
           <TextStyle2>
-            A hotel block has been secured at the Inn at Fox Hollow for
+            A new hotel block has been secured at the Inn at Fox Hollow for
             $229/night
+          </TextStyle2>
+          <TextStyle2>
+            Please call 516-224-8100 with reference to group name: Montalbano/Lynn
+            Wedding
           </TextStyle2>
           <TextStyle2 style={{ color: "red" }}>
             *Must be booked by May 6th 2021
@@ -113,10 +117,6 @@ const HotelInfoComponent = () => {
           {/* <TextStyle3 style={{ color: "blue" }} onClick={openFoxHollow}>
             You can book online by clicking on this text
           </TextStyle3> */}
-          <TextStyle2>
-            Please call 516-224-8100 with reference to group name: Montalbano/Lynn
-            Wedding
-          </TextStyle2>
         </div>
       </LandingImage>
     </ContainerStyle>
