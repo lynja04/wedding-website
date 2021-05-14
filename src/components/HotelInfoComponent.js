@@ -114,9 +114,9 @@ const HotelInfoComponent = () => {
           <TextStyle2 style={{ color: "red" }}>
             *Must be booked by May 6th 2021
           </TextStyle2>
-          {/* <TextStyle3 style={{ color: "blue" }} onClick={openFoxHollow}>
+          <TextStyle3 style={{ color: "blue" }} onClick={openFoxHollow}>
             You can book online by clicking on this text
-          </TextStyle3> */}
+          </TextStyle3>
         </div>
       </LandingImage>
     </ContainerStyle>

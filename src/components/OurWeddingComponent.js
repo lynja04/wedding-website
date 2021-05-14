@@ -49,7 +49,9 @@ const TextStyle = styled.div.attrs(() => ({}))`
 const ContainerStyle = styled.div.attrs(() => ({
   id: "our-wedding"
 }))`
-
+    @media (min-width: 768px) {
+      margin-bottom: 300px;
+    }
 `;
 
 const AddressStyle = styled.div`
@@ -99,7 +101,7 @@ const OurWeddingComponent = () => {
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
               className="vertical-timeline-element--work"
-              date="5:00pm"
+              date="6:00pm"
               iconStyle={{ background: "pink", color: "#fff" }}
               icon={
                 <FontAwesomeIcon style={{ width: "1.5rem" }} icon={faChurch} />
@@ -112,7 +114,7 @@ const OurWeddingComponent = () => {
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
               className="vertical-timeline-element--work"
-              date="6:00pm"
+              date="7:00pm"
               iconStyle={{ background: "pink", color: "#fff" }}
               icon={
                 <FontAwesomeIcon
@@ -126,7 +128,7 @@ const OurWeddingComponent = () => {
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
               className="vertical-timeline-element--work"
-              date="7:00pm"
+              date="8:00pm"
               iconStyle={{ background: "pink", color: "#fff" }}
               icon={
                 <FontAwesomeIcon
@@ -136,13 +138,13 @@ const OurWeddingComponent = () => {
               }
             >
               <h3 className="vertical-timeline-element-title">
-                Reception in the Winter Garden
+                Reception in The Somerley
               </h3>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
               className="vertical-timeline-element--work"
-              date="11:00pm"
+              date="12:00am"
               iconStyle={{ background: "pink", color: "#fff" }}
               icon={
                 <FontAwesomeIcon
@@ -158,7 +160,7 @@ const OurWeddingComponent = () => {
             <VerticalTimelineElement
               style={{ textAlign: "left" }}
               className="vertical-timeline-element--education"
-              date="6:00am-9:30am"
+              date="7:00am-9:30am"
               iconStyle={{ background: "pink", color: "#fff" }}
               icon={
                 <FontAwesomeIcon style={{ width: "1.5rem" }} icon={faCoffee} />

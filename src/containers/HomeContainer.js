@@ -7,6 +7,8 @@ import OurStoryContainer from "./OurStoryContainer";
 import OurWeddingContainer from "./OurWeddingContainer";
 import PhotosContainer from "./PhotosContainer";
 import HotelInfoContainer from "./HotelInfoContainer";
+import ContactTracingContainer from "./ContactTracingContainer";
+import { FirebaseContextProvider } from "../contexts/FirebaseContext"
 
 const NameHeading = styled.div`
   &&& {
@@ -116,13 +118,13 @@ const ContainerSpace = styled.div.attrs(() => ({
   &&& {
       &&& {
     @media (min-width: 768px) {
-      padding-top: 20px;
-      padding-bottom: 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
 
     @media (max-width: 767px) {
-      padding-top: 50px;
-      padding-bottom: 50px;
+      margin-top: 50px;
+      margin-bottom: 50px;
     }
   }
   }
@@ -144,35 +146,37 @@ const HomeContainer = () => {
 
   return (
     <div>
-      <LandingImage>
-        <LandingImage2>
-          <div style={{ paddingTop: "85px" }}>
-            <NameHeading>Alissa & James</NameHeading>
-            <DateAndVenueTitle>
-              06.06.2021 &nbsp; Woodbury, NY
-            </DateAndVenueTitle>
-            <ImageContainer>
-              <PostponedText>* Due to the COVID-19 pandemic *</PostponedText>
-              <PostponedText>* We have decided to postpone our wedding to Sunday, June 6th 2021 *</PostponedText>
-              <PostponedText>* See below for time changes, new invitation to follow *</PostponedText>
-              <StyledCoverImage src={logo} />
-            </ImageContainer>
-            <ContainerSpace>
-              <OurWeddingContainer />
-            </ContainerSpace>
-            <ContainerSpace>
-              <HotelInfoContainer />
-            </ContainerSpace>
-            <ContainerSpace>
-              <OurStoryContainer />
-            </ContainerSpace>
-            <ContainerSpace>
-              <PhotosContainer />
-            </ContainerSpace>
-
-          </div>
-        </LandingImage2>
-      </LandingImage>
+      <FirebaseContextProvider>
+        <LandingImage>
+          <LandingImage2>
+            <div style={{ paddingTop: "85px" }}>
+              <NameHeading>Alissa & James</NameHeading>
+              <DateAndVenueTitle>
+                06.06.2021 &nbsp; Woodbury, NY
+              </DateAndVenueTitle>
+              <ImageContainer>
+                <PostponedText>***COVID-19 TESTING IS NO LONGER REQUIRED, BUT RECOMMENDED AS OF MAY 19th***</PostponedText>
+                <StyledCoverImage src={logo} />
+              </ImageContainer>
+              <ContainerSpace>
+                <OurWeddingContainer />
+              </ContainerSpace>
+              <ContainerSpace>
+                <HotelInfoContainer />
+              </ContainerSpace>
+              <ContainerSpace>
+                <OurStoryContainer />
+              </ContainerSpace>
+              <ContainerSpace>
+                <ContactTracingContainer />
+              </ContainerSpace>
+              <ContainerSpace>
+                <PhotosContainer />
+              </ContainerSpace>
+            </div>
+          </LandingImage2>
+        </LandingImage>
+      </FirebaseContextProvider>
     </div>
   );
 };
