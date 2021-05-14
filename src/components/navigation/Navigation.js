@@ -35,6 +35,7 @@ const Navigation = () => {
       <Navbar.Brand href="/">A & J</Navbar.Brand>
       <Nav className={"mr-auto"}>
         <Nav.Link href="#contact-tracing">Contact Tracing</Nav.Link>
+        <Nav.Link href="#guidelines">Guidelines</Nav.Link>
         <Nav.Link href="#our-story">Our Story</Nav.Link>
         <Nav.Link href="#our-wedding">Our Wedding</Nav.Link>
         <Nav.Link onClick={openFoxHollow}>Hotel Rooms</Nav.Link>

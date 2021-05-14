@@ -9,6 +9,7 @@ import PhotosContainer from "./PhotosContainer";
 import HotelInfoContainer from "./HotelInfoContainer";
 import ContactTracingContainer from "./ContactTracingContainer";
 import { FirebaseContextProvider } from "../contexts/FirebaseContext"
+import GuidelinesContainer from "./GuidelinesContainer";
 
 const NameHeading = styled.div`
   &&& {
@@ -155,9 +156,11 @@ const HomeContainer = () => {
                 06.06.2021 &nbsp; Woodbury, NY
               </DateAndVenueTitle>
               <ImageContainer>
-                <PostponedText>***COVID-19 TESTING IS NO LONGER REQUIRED, BUT RECOMMENDED AS OF MAY 19th***</PostponedText>
                 <StyledCoverImage src={logo} />
               </ImageContainer>
+              <ContainerSpace>
+                <GuidelinesContainer />
+              </ContainerSpace>
               <ContainerSpace>
                 <OurWeddingContainer />
               </ContainerSpace>
