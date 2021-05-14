@@ -33,7 +33,7 @@ const TextStyle = styled.div.attrs(() => ({}))`
   }
 `;
 
-const TextStyle2 = styled.div.attrs(() => ({ className: "ml-5" }))`
+const TextStyle2 = styled.div.attrs(() => ({ className: "" }))`
   &&& {
     @media (min-width: 768px) {
       font-size: 35px;
@@ -90,25 +90,25 @@ const ContactTracingComponent = () => {
                             e.preventDefault();
                             onSubmit();
                         }}>
-                            <div className="d-flex">
+                            <div style={{ width: "100%" }} className="d-flex mb-1">
                                 <div className={"mr-2"}><label>First Name: </label></div>
-                                <input type="text" value={firstName} onChange={(e) => { setFirstName(e.target.value) }} />
+                                <input style={{ minWidth: "150px" }} type="text" value={firstName} onChange={(e) => { setFirstName(e.target.value) }} />
                             </div>
-                            <div className="d-flex">
+                            <div className="d-flex mb-1">
                                 <div className={"mr-2"}><label>Last Name: </label></div>
-                                <input type="text" value={lastName} onChange={(e) => { setLastName(e.target.value) }} />
+                                <input style={{ minWidth: "150px" }} type="text" value={lastName} onChange={(e) => { setLastName(e.target.value) }} />
                             </div>
-                            <div className="d-flex">
-                                <div className={"mr-2"}><label>Date of birth (01/01/1999): </label></div>
-                                <input type="text" value={dob} onChange={(e) => { setDob(e.target.value) }} />
+                            <div className="d-flex mb-1">
+                                <div className={"mr-2"}><label style={{}}>Date of birth: </label></div>
+                                <input style={{ minWidth: "150px" }} type="text" value={dob} onChange={(e) => { setDob(e.target.value) }} placeholder="01/01/1999" />
                             </div>
-                            <div className="d-flex">
-                                <div className={"mr-2"}><label>Phone Number (631-555-5555): </label></div>
-                                <input type="text" value={phone} onChange={(e) => { setPhone(e.target.value) }} />
+                            <div className="d-flex mb-1">
+                                <div className={"mr-2"}><label>Phone Number: </label></div>
+                                <input style={{ minWidth: "150px" }} type="text" value={phone} onChange={(e) => { setPhone(e.target.value) }} placeholder="631-555-5555" />
                             </div>
-                            <div className="d-flex">
-                                <div className={"mr-2"}><label>Email Address (email@address.com): </label></div>
-                                <input type="text" value={email} onChange={(e) => { setEmail(e.target.value) }} />
+                            <div className="d-flex mb-3">
+                                <div className={"mr-2"}><label>Email Address: </label></div>
+                                <input style={{ minWidth: "150px" }} type="text" value={email} onChange={(e) => { setEmail(e.target.value) }} placeholder="email@address.com" />
                             </div>
                             <input type="submit" value="Submit" />
                         </form>

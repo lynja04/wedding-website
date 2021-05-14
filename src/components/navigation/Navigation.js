@@ -33,7 +33,7 @@ const Navigation = () => {
   return (
     <Navbar fixed="top" bg="light" variant="light">
       <Navbar.Brand href="/">A & J</Navbar.Brand>
-      <Nav className={"mr-auto"}>
+      <Nav style={{ overflow: "scroll" }} className={"mr-auto"}>
         <Nav.Link href="#contact-tracing">Contact Tracing</Nav.Link>
         <Nav.Link href="#guidelines">Guidelines</Nav.Link>
         <Nav.Link href="#our-story">Our Story</Nav.Link>
